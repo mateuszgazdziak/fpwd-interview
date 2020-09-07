@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+server/sequelize/database.sqlite
+
 # production
 /build
 
