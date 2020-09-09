@@ -15,7 +15,7 @@ const authenticationRouter = require('./routes/api/authentication');
 server.use('/api', authenticationRouter);
 server.use('/api/invoices', invoicesRouter);
 
-const initServer = async () => {
+const startServer = async () => {
   try {
     await sequelize.authenticate();
     console.log('Database connected!');
@@ -25,9 +25,9 @@ const initServer = async () => {
     });
   } catch (err) {
     console.log('Unable to connect to the database');
-    console.log(error.message);
+    console.log(err.message);
     process.exit(1);
   }
 };
 
-initServer();
+module.exports = startServer;
