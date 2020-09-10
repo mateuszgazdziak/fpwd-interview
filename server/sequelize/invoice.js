@@ -11,10 +11,10 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
       },
 
-      uid: {
+      invoiceNumber: {
         allowNull: false,
         unique: true,
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
       },
 
       netAmount: {
