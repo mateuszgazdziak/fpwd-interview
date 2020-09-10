@@ -22,11 +22,6 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
       },
 
-      netAmount: {
-        allowNull: false,
-        type: DataTypes.INTEGER,
-      },
-
       vatPercent: {
         allowNull: false,
         type: DataTypes.INTEGER,
